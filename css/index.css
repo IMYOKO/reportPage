@@ -4,9 +4,441 @@
 .view-content {
 	border-radius: 5px;
 	background: #fff;
-	margin-bottom: 1px;
+	border-bottom: 2px solid #ebebeb;
 }
 .view-content-01 {
 	padding: 36px 64px 20px 50px;
 }
+.content-wrapper {
+	padding-left: 90px;
+	position: relative;
+}
+.logo-wrapper {
+	position: absolute;
+	top: 0;
+	left: -2px;
+}
+.logo-wrapper a {
+	display: block;
+}
+.content-title {
+	position: relative;
+	margin-bottom: 20px;
+}
+.content-title h2 {
+	color: #787878;
+	font-size: 20px;
+	line-height: 20px;
+}
+.content-title h2 span {
+	width: 34px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	background: #108ee9;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 2px;
+	margin-left: 10px;
+}
+.upload-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.content-list-01 {
+	font-size: 14px;
+	margin-right: 40px;
+}
+.content-list-01 li {
+	color: #a2a2a2;
+	margin-bottom: 10px;
+}
+.content-box-01 {
+	margin-bottom: 20px;
+}
+.color-green {
+	color: #00aa51 !important;
+}
+.color-yellow {
+	color: #fec100 !important;
+}
+.bgcolor-green {
+	background-color: #00aa51 !important;
+}
+.bgcolor-yellow {
+	background-color: #fec100 !important;
+}
+.bgcolor-blue {
+	background-color: #49a9ec !important;
+}
+.bgcolor-dark {
+	background-color: #999 !important;
+}
+.report-title {
+	color: #a2a2a2;
+	font-size: 12px;
+}
+.mb10 {
+	margin-bottom: 10px !important;
+}
+.report-title span {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	text-indent: 12px;
+	height: 14px;
+	line-height: 14px;
+}
+.report-title span i {
+	display: block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	border-radius: 8px;
+}
+.has-line-style {
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #bfbfbf;
+	background: #fbfbfb;
+	padding: 0 12px;
+	border: 1px solid #ebebeb;
+	border-left: none;
+	border-right: none;
+}
 /*01 end*/
+
+/*用户信息 star*/
+.content-wrapper-02 {
+	padding-left: 0;
+	border-bottom: 1px solid #ebebeb;
+}
+.content-01 {
+	padding-left: 90px;
+	position: relative;
+}
+.infor-box {
+	color: #d2d2d2;
+	height: 22px;
+	font-size: 12px;
+	line-height: 22px;
+	background: #989898;
+	padding: 0 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.infor-content-list li {
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.left-infor {
+	position: absolute;
+	top: -2px;
+	left: 0;
+}
+.infor-item {
+	font-size: 14px;
+	color: #a0a0a0;
+}
+.infor-item strong {
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	margin-right: 20px;
+}
+.infor-item p {
+	font-size: 12px;
+}
+.ico-infor-item {
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	text-indent: 16px;
+	margin-right: 20px;
+}
+.ico-match {
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	background: url(../images/icon_gouxuan.png) center center no-repeat;
+}
+.ico-noMatch {
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	background: url(../images/icon_tixing.png) center center no-repeat;
+}
+.ico-noShuju {
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	background: url(../images/icon_wenhao.png) center center no-repeat;
+}
+.ico-addr {
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	background: url(../images/icon_dingwei.png) center center no-repeat;
+}
+.report-title .normal {
+	text-indent: 0;
+}
+.content-wrapper-03 {
+	padding-top: 20px;
+	border-bottom: none;
+}
+.left-infor span {
+	font-size: 12px;
+	color: #a0a0a0;
+}
+.left-infor-02 {
+	width: 100px;
+	text-align: right;
+	left: inherit;
+	right: 800px;
+}
+.look-more-link {
+	color: #3ca6ef;
+	margin-left: 4px;
+}
+.pd40 {
+	padding-bottom: 60px !important;
+}
+/*用户信息 end*/
+
+/*紧急联系人 star*/
+.content-02 {
+	padding-left: 0;
+}
+.bb-0 {
+	border-bottom: none !important;
+}
+.table-box {
+	padding-top: 40px;
+}
+.table-style-01 {
+	color: #999;
+	font-size: 12px;
+}
+.table-style-01 th {
+	padding: 6px 0;
+	line-height: 14px;
+}
+.table-style-01 td {
+	padding: 12px 0;
+	border-top: 1px solid #ebebeb;
+}
+.table-style-01 td p {
+	height: 20px;
+	line-height: 20px;
+}
+.table-style-01 td i {
+	margin-top: 4px;
+}
+.table-style-01 .ico-infor-item {
+	margin-right: 0 !important;
+}
+.table-style-01 tbody em {
+	color: #999;
+	display: inline-block;
+	padding: 4px 8px;
+	margin: 0 3px;
+	background: #f7f7f7;
+	border-radius: 3px;
+	border: 1px solid #eaeaea;
+}
+/*紧急联系人 end*/
+
+/*风险联系人 star*/
+.pt40 {
+	padding-top: 40px !important;
+}
+.table-style-01 td strong {
+	color: #666;
+	font-weight: bold;
+}
+.table-style-02 td {
+	padding: 23px 0;
+}
+
+/*分页 star */
+.pages-wrapper {
+	padding: 10px 0;
+}
+.pages-main {
+	margin-right: 20px;
+	padding: 4px 0;
+}
+.pages-main>a,
+.pages-main .pages>a {
+	color: #999;
+	font-size: 12px;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 2px;
+	background: none;
+}
+.pages a.active {
+	color: #fff;
+	background: #118ee6;
+}
+.pages-choose {
+	margin: 0 20px 0 0 ;
+}
+.pages-choose select {
+	color: #999;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 4px 10px 4px 4px;
+	border-radius: 4px;
+	border: 1px solid #ebebeb;
+}
+.pages-go {
+	line-height: 22px;
+}
+.pages-go span {
+	margin: 0 8px;
+	color: #999;
+	font-size: 12px;
+}
+.pages-go input[type=text] {
+	width: 40px;
+	border-radius: 4px;
+	padding: 4px 6px;
+	border: 1px solid #ebebeb;
+}
+.pages-go input[type=button]  {
+	width: 40px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 22px;
+	cursor: pointer;
+	background: #118ee6;
+}
+/*分页 end */
+/*风险联系人 end*/
+
+/*全部通话统计 star*/
+.table-list {
+	width: 490px;
+}
+.textAlign-left {
+	text-align: left !important;
+	text-indent: 6px;
+}
+/*全部通话统计 end*/
+
+/*近6个月消费情况 star*/
+.table-style-border {
+	color: #666;
+	font-size: 12px;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+	border-right: none;
+}
+.table-style-border td,
+.table-style-border th {
+	height: 34px;
+	line-height: 34px;
+	border-right: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+.table-style-border th {
+	background: #f2f5f5;
+}
+/*近6个月消费情况 end*/
+
+/*出行记录分析 star*/
+.table-day td>i {
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	display: inline-block;
+	margin-left: 10px;
+}
+/*出行记录分析 end*/
+
+/*静默活跃统计 star*/
+.call-item {
+	width: 200px;
+	padding-top: 20px;
+}
+.call-item h3 {
+	color: #999;
+	font-size: 12px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.call-box {
+	border-radius: 6px;
+	border: 1px solid #ebebeb;
+	background: #fbfbfb;
+}
+.call-title {
+	height: 40px;
+	padding: 0 20px;
+	line-height: 40px;
+	border-bottom: 1px solid #ebebeb;
+}
+.call-title span {
+	width: 50%;
+	color: #666;
+	font-size: 12px;
+	display: block;
+	text-align: center;
+	float: left;
+}
+.call-table-box {
+	padding: 10px 20px;
+}
+.call-table {
+	color: #999;
+	font-size: 12px;
+}
+.call-table td {
+	height: 32px;
+	line-height: 32px;
+}
+.table-style-03 td {
+	padding: 14px 0;
+}
+.table-pages-wrapper {
+	text-align: center;
+}
+.table-pages-midder {
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.mr0 {
+	margin-right: 0 !important;
+}
+.table-list-02 {
+	width: 460px;
+}
+.call-item {
+	margin: 0 8px;
+}
+/*静默活跃统计 end*/

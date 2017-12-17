@@ -53,7 +53,7 @@ body {
 	background-color: #666;
 	font-family: "Helvetica Neue LT Pro", "Helvetica", "microsoft yahei", "Hiragino Sans GB W3";
 	font-size: 16px;
-	color: #333;
+	color: #666;
 }
 input, img, select {
 	vertical-align: middle;
@@ -65,7 +65,7 @@ sumbit {
 	display: none;
 }
 a {
-	color: #333;
+	color: #666;
 	text-decoration: none;
 }
 .clearfix:after {
