@@ -442,3 +442,62 @@
 	margin: 0 8px;
 }
 /*静默活跃统计 end*/
+
+/*
+ * 图表
+ */
+
+/*风险联系人 star*/
+.riskContant {
+	width: 50%;
+	position: relative;
+}
+.kline-title {
+	font-size: 12px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.color-d2 {
+	color: #d2d2d2;
+}
+.riskContant-02 {
+	width: 440px;
+	height: 240px;
+	padding-left: 20px;
+}
+/*风险联系人 end*/
+
+/*金融机构联系人 star*/
+.financial-institution {
+	width: 50%;
+}
+.financial-institution-01 {
+	width: 430px;
+	height: 280px;
+}
+/*金融机构联系人 end*/
+
+/*全部通话统计 star*/
+.call-line-item-01 {
+	margin-bottom: 60px;
+}
+.call-tips p {
+	color: #d2d2d2;
+	font-size: 12px;
+	line-height: 22px;
+}
+/*全部通话统计 end*/
+
+/*近6个月消费 star*/
+.xiaoFei-line-wrapper {
+	padding: 30px 0px 0px;
+}
+.xiaoFei-line-content {
+	width: 50%;
+}
+.xiaoFei-tips {
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+/*近6个月消费 end*/

@@ -76,7 +76,7 @@
 								<img src="images/icon_sfz.png" alt="" width="14" height="14"/>
 							</div>
 							<div class="report-result">
-								<div class="report-title clearfix">
+								<div class="report-title mb10 clearfix">
 									<span class="normal">33010023347873267886786</span>
 									<sapn class="ico-infor-item"><i class="ico-match"></i>身份证有效</sapn>
 									<sapn class="ico-infor-item"><i class="ico-noMatch"></i>和运营商数据不匹配</sapn>
@@ -115,7 +115,7 @@
 								<span>家庭地址：</span>
 							</div>
 							<div class="report-result">
-								<div class="report-title clearfix">
+								<div class="report-title mb10 clearfix">
 									<span class="normal">XX省XX市XX县XX乡XX村XX号</span>
 									<sapn class="ico-infor-item"><i class="ico-noMatch"></i>和运营商数据不匹配</sapn>
 								</div>
@@ -190,7 +190,7 @@
 								<img src="images/icon_dingwei.png" alt="" width="14" height="14"/>
 							</div>
 							<div class="report-result">
-								<div class="report-title clearfix">
+								<div class="report-title mb10 clearfix">
 									<span class="normal">广东省深圳市</span>
 									<sapn class="ico-infor-item"><i class="ico-noMatch"></i>和常用通话地址不一致</sapn>
 								</div>
@@ -338,8 +338,14 @@
 				<div class="infor-box">风险联系人</div>
 				<!--kline star-->
 				<div class="kline-wrapper pt40 clearfix">
-					<div style="width: 50%;background: #999; height: 100px; float: left;"></div>
-					<div style="width: 50%;background: #666; height: 100px; float: left;"></div>
+					<div id="riskContant-01" class="riskContant float-left">
+						<div class="kline-title">风险分布图</div>
+						<div id="fx-scatter" style="width: 430px; height: 280px;"></div>
+					</div>
+					<div class="riskContant float-right">
+						<div class="kline-title">风险联系人近6月通话时长</div>
+						<div id="riskContant-02" class="riskContant-02"></div>
+					</div>
 				</div>
 				<!--kine end-->
 				<div class="table-box">
@@ -520,8 +526,14 @@
 				<div class="infor-box">金融机构联系人</div>
 				<!--kline star-->
 				<div class="kline-wrapper pt40 clearfix">
-					<div style="width: 50%;background: #999; height: 100px; float: left;"></div>
-					<div style="width: 50%;background: #666; height: 100px; float: left;"></div>
+					<div class="financial-institution float-left">
+						<div class="kline-title">金融机构通话数量</div>
+						<div id="financial-institution-01" class="financial-institution-01"></div>
+					</div>
+					<div class="financial-institution float-right">
+						<div class="kline-title">金融机构通话次数</div>
+						<div id="financial-institution-02" class="financial-institution-01"></div>
+					</div>
 				</div>
 				<!--kine end-->
 				<div class="table-box">
@@ -893,6 +905,22 @@
 					</div>
 					<!--left end-->
 					<!--right-->
+					<div class="call-kline-wrapper float-right">
+						<div class="call-line-item call-line-item-01">
+							<div class="kline-title">近6个月通话号码分布</div>
+							<div id="call-line-01" style="width: 360px; height: 260px;"></div>
+							<div class="kline-title color-d2">互通号码指至少1次主叫通话且至少1次被叫通话的号码</div>
+						</div>
+						<div class="call-line-item">
+							<div class="kline-title">近6个月通话时间段分布</div>
+							<div id="call-line-02" style="width: 360px; height: 260px;"></div>
+							<div class="call-tips">
+								<p>工作时间：08:00-18:00</p>
+								<p>工作时间：06:00-08:00；18:0-24:00</p>
+								<p>深夜时间：00:00-18:00</p>
+							</div>
+						</div>
+					</div>
 					<!--right end-->
 				</div>
 			</div>
@@ -905,6 +933,96 @@
 			<div class="content-01 content-02">
 				<div class="infor-box">近6个月消费情况</div>
 				<!--kline-->
+				<div class="xiaoFei-line-wrapper clearfix">
+					<div class="xiaoFei-line-content float-left">
+						<div id="xiaoFei-line-01" style="width: 420px; height: 240px;"></div>
+					</div>
+					<div class="xiaoFei-line-content float-right">
+						<div id="xiaoFei-line-02" style="width: 420px; height: 270px;"></div>
+					</div>
+				</div>
+				<!--kline end-->
+				<div class="table-box clearfix">
+					<table class="table-style-border">
+						<thead>
+							<tr>
+								<th>所属月份</th>
+								<th>总通话时长(分)</th>
+								<th>主叫次数</th>
+								<th>主叫时长(分)</th>
+								<th>被叫次数</th>
+								<th>被叫时长(分)</th>
+								<th>短信数量</th>
+								<th>通话费用(元)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017-10</td>
+								<td>213</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>7</td>
+								<td>-7</td>
+							</tr>
+							<tr>
+								<td>2017-09</td>
+								<td>213</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>7</td>
+								<td>-7</td>
+							</tr>
+							<tr>
+								<td>2017-08</td>
+								<td>213</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>7</td>
+								<td>-7</td>
+							</tr>
+							<tr>
+								<td>2017-07</td>
+								<td>213</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>7</td>
+								<td>-7</td>
+							</tr>
+							<tr>
+								<td>2017-06</td>
+								<td>213</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>213</td>
+								<td>213.78</td>
+								<td>7</td>
+								<td>-7</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--近6个月消费情况 end-->
+	<!--近6个月通话频率前十 star-->
+	<div class="view-content view-content-01 pd40">
+		<div class="content-wrapper content-wrapper-02 bb-0">
+			<div class="content-01 content-02">
+				<div class="infor-box">近6个月通话频率前十</div>
+				<!--kline-->
+				<div class="xiaoFei-line-wrapper clearfix">
+					<div id="call-line-10" style="width: 420px; height: 240px; margin-left: 260px;"></div>
+				</div>
 				<!--kline end-->
 				<div class="table-box clearfix">
 					<table class="table-style-border">
@@ -971,12 +1089,17 @@
 			</div>
 		</div>
 	</div>
-	<!--近6个月消费情况 end-->
+	<!--近6个月通话频率前十 end-->
 	<!--联系人归属地统计 star-->
 	<div class="view-content view-content-01 pd40">
 		<div class="content-wrapper content-wrapper-02 bb-0">
 			<div class="content-01 content-02">
 				<div class="infor-box">联系人归属地统计</div>
+				<!--line-->
+				<div class="kline-wrapper pt40 clearfix">
+					<div id="contacts-scatter" style="widows: 100%; height: 400px;"></div>
+				</div>
+				<!--line-->
 				<div class="table-box">
 					<table class="table-style-01 table-style-02">
 						<thead>
@@ -1162,6 +1285,11 @@
 					</div>
 					<!--left end-->
 					<!--right-->
+					<div class="call-kline-wrapper float-right">
+						<div class="call-line-item">
+							<div id="yys-pie" style="width: 420px; height: 420px;"></div>
+						</div>
+					</div>
 					<!--right end-->
 				</div>
 			</div>
@@ -1246,6 +1374,12 @@
 					</div>
 					<!--left end-->
 					<!--right-->
+					<div class="call-kline-wrapper float-right">
+						<div class="call-line-item">
+							<div class="xiaoFei-tips">每月消费和充值</div>
+							<div id="myxf-bar" style="width: 410px; height: 380px;"></div>
+						</div>
+					</div>
 					<!--right end-->
 				</div>
 			</div>
@@ -1257,6 +1391,19 @@
 		<div class="content-wrapper content-wrapper-02 bb-0">
 			<div class="content-01 content-02">
 				<div class="infor-box">通话地区统计</div>
+				<!--kline-->
+				<div class="kline-wrapper pt40 clearfix">
+					<div class="financial-institution float-left">
+						<div class="xiaoFei-tips">各地区通话活跃天数分布</div>
+						<div id="callAdder-01" style="width: 430; height: 280px;"></div>
+						<div class="kline-title color-d2" style="margin-bottom: 0;">通话活跃指当天（00:00:00-23:59:59）至少有1次通话</div>
+					</div>
+					<div class="financial-institution float-right">
+						<div class="xiaoFei-tips">各地区工作日和节假日通话</div>
+						<div id="callAdder-02" style="width: 430; height: 280px;"></div>
+					</div>
+				</div>
+				<!--kline-->
 				<div class="table-box">
 					<table class="table-style-01 table-style-02">
 						<thead>
@@ -1493,7 +1640,7 @@
 				<!--分页 star-->
 				<div class="pages-wrapper clearfix">
 					<!---->
-					<div class="report-title float-left clearfix" style="margin: 8px 0 0 20px;">
+					<div class="report-title mb10 float-left clearfix" style="margin: 8px 0 0 20px;">
 						<span><i class="bgcolor-blue"></i>节假日</span>
 						<span><i class="bgcolor-dark"></i>工作日</span>
 					</div>
@@ -1723,7 +1870,10 @@
 			<div class="content-01 content-02">
 				<div class="infor-box">各时段通话统计</div>
 				<!--kline-->
-				278787
+				<div class="kline-wrapper pt40 clearfix">
+					<div class="xiaoFei-tips">每2小时时间段通话时长</div>
+					<div id="time-bar" style="width: 100%; height: 460px;"></div>
+				</div>
 				<!--kline end-->
 			</div>
 		</div>
@@ -1832,6 +1982,52 @@
 
 <!--js star-->
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+
+<!--风险联系人图表-->
+<script type="text/javascript" src="js/fx-scatter.js"></script>
+<script type="text/javascript" src="js/riskContact-02.js"></script>
+<!--风险联系人图表-->
+
+<!--金融机构联系人图表-->
+<script type="text/javascript" src="js/financial-01.js"></script>
+<script type="text/javascript" src="js/financial-02.js"></script>
+<!--金融机构联系人图表-->
+
+<!--全部通话统计图表-->
+<script type="text/javascript" src="js/callLine-01.js"></script>
+<script type="text/javascript" src="js/callLine-02.js"></script>
+<!--全部通话统计图表-->
+
+<!--近6个月消费图表-->
+<script type="text/javascript" src="js/xiaoFeiLine-01.js"></script>
+<script type="text/javascript" src="js/xiaoFeiLine-02.js"></script>
+<!--近6个月消费图表-->
+
+<!--近6个月通话频率前十图表-->
+<script type="text/javascript" src="js/callLine-10.js"></script>
+<!--近6个月通话频率前十图表-->
+
+<!--运营商消费统计图表-->
+<script type="text/javascript" src="js/yys-pie.js"></script>
+<!--运营商消费统计图表-->
+
+<!--每月消费统计图表-->
+<script type="text/javascript" src="js/myxf-bar.js"></script>
+<!--每月消费统计图表-->
+
+<!--通话地区统计图表-->
+<script type="text/javascript" src="js/callAdder-01.js"></script>
+<script type="text/javascript" src="js/callAdder-02.js"></script>
+<!--通话地区统计图表-->
+
+<!--各时段通话统计图表-->
+<script type="text/javascript" src="js/time-bar.js"></script>
+<!--各时段通话统计图表-->
+
+<!--联系人归属地统计图表-->
+<script type="text/javascript" src="js/contacts-scatter.js"></script>
+<!--联系人归属地统计图表-->
 <script type="text/javascript">
 	//分页效果
 	$('.pages a').click(function(){
