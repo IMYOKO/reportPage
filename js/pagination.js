@@ -36,6 +36,7 @@
 		init: function(){
 			var num = this.options.selectOption[0];
 			this.creatElements();
+			//初始化显示
 			this.showPages(num,1);
 			this.clickToPage(num,1);
 			this.goToPage();
@@ -45,11 +46,16 @@
 		
 		//创建分页DOME
 		creatElements: function(){
-			//分页
-			var pageAHtml = ''
+			
+			//初始每页显示数目
 			var num = this.options.selectOption[0];
+			//计算分页个数
 			var count = Math.ceil(this.length/num);
 			
+			/*
+			 * 分页
+			 */
+			var pageAHtml = '';
 			for(var i=1; i<=count; i++){
 				pageAHtml += '<a href="javascript:;">'+ i +'</a>';
 			}
@@ -61,9 +67,11 @@
 								'<a href="javascript:;" class="prevNext">></a>'+
 							'</div>';
 							
-			//选择
+			/*
+			 * 选择
+			 */
 			var selLen = this.options.selectOption.length;
-			var optionHtml = ''
+			var optionHtml = '';
 			for(var i=0; i<selLen; i++){
 				optionHtml +=	'<option value="'+ this.options.selectOption[i] +'">'+ this.options.selectOption[i] +'条/页</option>'
 			}
@@ -74,7 +82,9 @@
 							'</div>';
 							
 							
-			//跳转
+			/*
+			 * 跳转
+			 */
 			var gotoHtml = '<div class="pages-go float-left">'+
 								'<span>跳至</span><input type="text" name="" id="gotoVal" value="" /><span>页</span><input type="button" name="" id="gotoBtn" value="确定" />'+
 							'</div>';
@@ -88,10 +98,12 @@
 			this.$element.find('.pages a').eq(0).addClass('active');
 		},
 		
-		//初始化先显示5页
+		//开始显示和结束显示
 		showPages: function(num,count){
 			this.$list.find('tr').hide();
+			//显示开始的下标
 			var starCount = (count-1)*num;
+			//显示结束的下标
 			var endCount = count*num-1;
 			for(var i=starCount; i<=endCount; i++){
 				this.$list.find('tr').eq(i).show();
@@ -197,8 +209,6 @@
 			})
 		}
 	},
-	
-	
 	
 	//扩展到jQuery
 	$.fn.pagesPulgin = function(listId){
