@@ -280,6 +280,9 @@
 }
 
 /*分页 star */
+.list-pages tr {
+	display: none;
+}
 .pages-wrapper {
 	padding: 10px 0;
 }
